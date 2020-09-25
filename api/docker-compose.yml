@@ -1,0 +1,13 @@
+version: "3"
+services:
+  db:
+    image: mysql:latest
+    container_name: bb-api-db
+    restart: on-failure
+#    command: mysqld --skip-grand-tables
+    environment:
+      MYSQL_DATABASE: bb_dev_db
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306

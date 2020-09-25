@@ -1,0 +1,24 @@
+spring:
+  ### Config migrations
+  flyway:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/bb_dev_db?createDatabaseIfNotExist=true&serverTimezone=UTC&&useSSL=false}
+    user: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
+  ### Config datasource
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/bb_dev_db?createDatabaseIfNotExist=true&serverTimezone=UTC&&useSSL=false}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
+  ### Config JPA
+  jpa:
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: true
+      ddl-auto: validate
+    ### Config statistics
+    properties:
+      hibernate:
+        format_sql: true
+        generate_statistics: true
+        temp:
+          use_jdbc_metadata_defaults: false
