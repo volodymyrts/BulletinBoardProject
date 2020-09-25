@@ -24,13 +24,13 @@ RESTfull API for BulletinBoard
 ## Installation
 1. Clone this project
 2. Go to folder ```api```
-3. Start database using ``docker-compose.yml`` file
+3. Start database using docker(the command is described below)
 4. Start application
 
 ## Commands for running app
 ```
     1. docker-compose up db             - started db instance as daemon thread
-    2. docker-compose down db           - stopped dn instance
+    2. docker-compose down db           - stopped db instance
     3. docker exec -it bb-api-db bash   - connect to docker container
     4. mysql -h localhost -p            - connect to mysql console(password =root ) 
 ```
