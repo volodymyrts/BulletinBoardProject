@@ -2,6 +2,28 @@
 
 RESTfull API for BulletinBoard
 
+## About
+
+List of available endpoints:
+1) GET /ads/all - view list of all rooms.
+      Example: http://localhost:8080/ads/all
+
+2) GET /ads/category/{category_id} - view ads filtered by category.
+   Example: http://localhost:8080/ads/category/1
+   
+   
+3) POST /users/create - create new user
+   Example: http://localhost:8080/users/create with JSON body:
+   
+   JSON example:
+   {
+       "username": "John",
+       "password": "Qwerty123"
+   }
+   
+4) POST /ads/create - book the room for specified days.
+
+
 ## Structure / Stack
  * Client 
     * ReactJS or another front-end framework or libs
