@@ -1,19 +1,16 @@
 ## Description
 
-RESTfull API for BulletinBoard
+RESTful API for BulletinBoard
 
 ## About
 
 List of available endpoints:
-1) GET /ads/all - view list of all rooms.
-      Example: http://localhost:8080/ads/all
+1) GET /api/v1/adv/all - view list of all ads. Example: http://localhost:8080/api/v1/ads/all
 
-2) GET /ads/category/{category_id} - view ads filtered by category.
-   Example: http://localhost:8080/ads/category/1
+2) GET /api/v1/adv/category/{category_id} - view ads filtered by category.    Example: http://localhost:8080/api/v1/ads/category/1
    
    
-3) POST /users/create - create new user
-   Example: http://localhost:8080/users/create with JSON body:
+3) POST /api/v1/users/create - create new user. Example: http://localhost:8080/api/v1/users/create with JSON body:
    
    JSON example:
    {
@@ -21,7 +18,7 @@ List of available endpoints:
        "password": "Qwerty123"
    }
    
-4) POST /ads/create - book the room for specified days.
+4) POST /api/v1/adv/create - create new adv. Example: http://localhost:8080/api/v1/adv/create with JSON body: {}
 
 
 ## Structure / Stack
